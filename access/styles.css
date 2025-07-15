@@ -1,0 +1,223 @@
+/* Cho Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #07acc9;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333;
+}
+.scroll-box {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #121212;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 0.5px solid #333;
+  background-color: #000000;
+  box-shadow: 0 0 10px 0 #333;
+}
+
+#logo img {
+  height: 50px;
+  border-radius: 50%;
+}
+
+#search input {
+  background: #222;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.search {
+  border: 0.1px solid #07acc9 !important;
+}
+.search::selection {
+  border: none !important;
+}
+
+#user img {
+  height: 40px;
+  border-radius: 50%;
+}
+
+.carousel-item img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.latest-release .card {
+  background: #1f1f1f;
+  border: none;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.title-h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+}
+
+.play-card {
+  padding: 5px 20px;
+}
+.play-card:hover
+.info-dev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+}
+.name-dev {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10px;
+}
+#custom-player {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  align-items: center;
+  background: #181818;
+  color: #fff;
+  padding: 10px 20px;
+  border-top: 0.5px solid #333;
+  box-shadow: 0 0 10px 0 #333;
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+}
+
+.player-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.images-play {
+  width: 50px;
+  border-radius: 5px;
+}
+
+.card-title {
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+}
+.card-text {
+  color: #ccc;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+}
+
+.player-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.player-text .artist {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: auto;
+}
+
+#play-btn, #prev-btn, #next-btn, #repeat-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#play-btn:hover, #prev-btn:hover, #next-btn:hover, #repeat-btn:hover {
+  opacity: 0.5  ;
+}
+
+
+#progress {
+  width: 200px;
+  accent-color: #1db954;
+}
+
+#time {
+  font-size: 12px;
+}
+
+
+
+/* css chủ đề */
+body.light-mode {
+  background: #f5f5f5;
+  color: #111;
+}
+
+body.light-mode header {
+  background: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+}
+
+body.light-mode #search input {
+  background: #f5f5f5;
+  color: #111;
+}
+
+body.light-mode .latest-release .card {
+  background: #eee;
+}
+
+body.light-mode #custom-player {
+  background: #f5f5f5;
+  color: #111;
+}
+
+body.light-mode .card-title {
+  color: #111;
+}
+
+body.light-mode .card-text {
+  color: #444;
+}
+
+body.light-mode #progress {
+  accent-color: #007bff; /* màu xanh nhẹ hơn */
+}
+
+body.light-mode ::-webkit-scrollbar-thumb {
+  background: #007bff;
+}
+
+body.light-mode ::-webkit-scrollbar-track {
+  background: #ddd;
+}

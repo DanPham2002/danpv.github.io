@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ℍ𝕠𝕪𝕠-𝕄𝕚𝕩</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="access/styles.css" />
+  <link rel="shortcut icon" href="images/HoYo-MiX.webp" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/691d3ab680.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header class="handler_bar">
+    <div id="logo">
+      <img src="images/HoYo-MiX.webp" alt="Logo" />
+      <span class="ms-2">🎶</span>
+    </div>
+
+    <div id="search" class="d-flex align-items-center">
+      <i class="fa-solid fa-magnifying-glass me-2"></i>
+      <input type="search" placeholder="Tìm kiếm..." class="search"/>
+      <i class="fa-solid fa-microphone ms-2"></i>
+    </div>
+
+    <div id="user" class="d-flex align-items-center">
+      <i class="fa-solid fa-bell me-3"></i>
+      <i id="toggle-theme" class="fa-solid fa-moon me-3" style="cursor: pointer;"></i>
+      <img src="images/Apple-touch-icon.webp" alt="User"/>
+    </div>
+  </header>
+
+  <main class="container my-4">
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/unnamed.jpg" class="d-block w-100" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+          <img src="images/unnamed.jpg" class="d-block w-100" alt="Slide 2">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- Latest Release -->
+    <h3 class="title-h3">🎧 Danh sách phát nhạc</h3>
+    <div class="row latest-release" id="latest-release"></div>
+    <div class="info-dev">
+       <span class="name-dev">Copyright® Phạm Văn Dân</span>
+    </div>
+  </main>
+ 
+
+  <!-- Player -->
+  <div id="custom-player">
+  <!-- Thông tin bài hát -->
+  <div class="player-info">
+    <div class="player-meta">
+      <img src="images/unnamed.jpg" alt="" class="images-play">
+      <div class="player-text">
+        <span class="title"></span>
+        <span class="artist"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Điều khiển phát nhạc -->
+  <div class="player-controls">
+  <button id="prev-btn">⏮</button>
+  <button id="play-btn">▶</button>
+  <button id="next-btn">⏭</button>
+  <input id="progress" type="range" value="0">
+  <audio id="audio"></audio>
+  <span id="time"></span>
+  <button id="repeat-btn">🔀</button>
+  </div>
+
+</div>
+
+  <script type="module" src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
